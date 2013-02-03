@@ -1,0 +1,10 @@
+Export your toolchain PATH
+	e.g.  /media/S9091/Linux/prebuilt/prebuilt/linux-x86/toolchain/arm-linux-androideabi-4.4.x/bin:$PATH
+
+Build command:
+
+kernel
+======
+	cd <kernel path>
+	cp mediatek-configs out/.config
+	TARGET_PRODUCT=tinnoes77_s9091 MTK_ROOT_CUSTOM=../mediatek/custom KBUILD_OUTPUT_SUPPORT=yes make O=out
